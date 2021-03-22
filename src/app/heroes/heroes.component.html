@@ -1,0 +1,8 @@
+<!-- Formatear con UppercasePipe -->
+<h2>{{hero.name | uppercase}} Details</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div>
+    <label for="name">Hero name: </label>
+    <!--[(ngModel)] es la sintaxis de enlace de datos bidireccional de Angular.-->
+    <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
