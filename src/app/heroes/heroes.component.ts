@@ -30,6 +30,7 @@ export class HeroesComponent implements OnInit {
 
   //  método para recuperar a los héroes del servicio.
   getServiceHeroes(): void {
-    this.myheroes = this.heroService.getHeroes();
+     this.heroService.getHeroes().subscribe(
+        heroes => this.myheroes = heroes);
   }
 }
